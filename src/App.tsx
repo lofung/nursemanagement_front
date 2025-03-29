@@ -23,7 +23,7 @@ const App: React.FC = () => {
   });
 
   //const url = "http://localhost:3000/nurses"
-  const url = "https://nurse-admin-backend.onrender.com/nurses" //change for production
+  const url = "https://nursemanagement.onrender.com/nurses" //change for production
   //change for production
 
 
