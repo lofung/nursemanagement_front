@@ -18,7 +18,7 @@ const App: React.FC = () => {
     employee_id: 0,
     first_name: "",
     last_name: "",
-    ward: "",
+    ward: "Red",
     email: "",
   });
 
@@ -103,7 +103,16 @@ const App: React.FC = () => {
             <label className="font-medium">Last Name</label>
             <input className="p-2 border border-gray-300 rounded" placeholder="Last Name" value={newNurse.last_name} onChange={(e) => setNewNurse({ ...newNurse, last_name: e.target.value })} />
             <label className="font-medium">Ward</label>
-            <input className="p-2 border border-gray-300 rounded" placeholder="Ward" value={newNurse.ward} onChange={(e) => setNewNurse({ ...newNurse, ward: e.target.value })} />
+            <select
+              className="p-2 border border-gray-300 rounded"
+              value={newNurse.ward}
+              onChange={(e) => setNewNurse({ ...newNurse, ward: e.target.value })}
+            >
+              <option value="Red">Red</option>
+              <option value="Green">Green</option>
+              <option value="Blue">Blue</option>
+              <option value="Yellow">Yellow</option>
+            </select>
             <label className="font-medium">Email</label>
             <input className="p-2 border border-gray-300 rounded" placeholder="Email" value={newNurse.email} onChange={(e) => setNewNurse({ ...newNurse, email: e.target.value })} />        
           </div>
